@@ -1,0 +1,29 @@
+<ion-content>
+    <ion-grid>
+        <div class="container">
+            <div class="form-conrainer">
+                <div class="step second" *ngIf="stepNumber==1">
+                    <form [formGroup]="secondFormGroup">
+                        <h1>Please choose profile name</h1>
+                        <ion-item>
+                            <ion-input class="form-control" #name></ion-input>
+                        </ion-item>
+                        <span class="note">*Mandatory field</span>
+                        <div>
+                            <button class="next-bth" [ngClass]='name.value ? "selected" : "non-selected"' (click)="nextStep(name.value)">Next</button>
+                        </div>
+                    </form>
+                </div> 
+                <div class="step third" *ngIf="stepNumber==2">
+                    <h1>What you’re interested in?</h1>
+                    <div class="container-chips">
+                        <chips></chips>
+                    </div>
+                    <div>
+                        <div class="explore-bth" [ngClass]='firstFormGroup.gender ? "selected" : "non-selected"' (click)="submit()">Create profile</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-grid>
+</ion-content>

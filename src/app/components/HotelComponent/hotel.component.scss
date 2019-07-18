@@ -1,0 +1,184 @@
+    
+
+.back {
+    display: inline-block;
+    margin-top: 29px;
+    margin-left: 30px;
+}
+#loader {
+    pointer-events: none;
+    width: 100%;
+    padding-top: 18px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 13%;
+    display: inline-block;
+    margin-bottom: 7%;
+}
+
+.top {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, #FE784D, #FF5347);
+    color: white;
+}
+.book-bth{
+    height: 32px;
+    border-radius: 7%;
+    background: linear-gradient(to right, #FE784D, #FF5347);
+    color: white;
+    text-align: center;
+    width: 28%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 6px;
+    box-shadow: 0px 1px 4px #00000059;
+   }
+
+.hotels {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+
+  & .hotels-container {
+    position: relative;
+    top: 48pt;
+  }
+
+  & .hotel-picture {
+    height: 220pt;
+    width: 100%;
+    background: black;
+    background-size: cover !important;
+  }
+
+  & .hotel-name {
+    position: relative;
+    left: 10pt;
+    width: 90%;
+
+    & .name {
+      font-size: 140%;
+      font-family: "Roboto";
+      font-weight: bold;
+      margin: 20pt 0 0 0;
+    }
+
+    & .hotel-address {
+      font-size: 116%;
+      margin: 8pt 0 0 0;
+    }
+  }
+  & .hotel-info {
+    display: flex;
+    flex-flow: row;
+    & .price-container {
+      display: flex;
+      flex-flow: column;
+      position: relative;
+      left: 11pt;
+      top: 4pt;
+      & .price-title {
+        position: relative;
+        color: #969696;
+      }
+
+      & .price {
+        margin: 0;
+        position: relative;
+        bottom: 8pt;
+        font-size: 120%;
+        font-weight: bolder;
+      }
+    }
+
+    & .rate-container {
+      display: flex;
+      flex-flow: column;
+      position: relative;
+      left: 12%;
+      top: 18pt;
+      & .rate {
+        margin: 0;
+        bottom: 2pt;
+        color: #969696;
+        position: relative;
+      }
+      & .stars {
+        margin: 0;
+        position: relative;
+        font-size: 120%;
+        color: #ffd247;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  & .book {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    bottom: 13pt;
+    background: #ff5347;
+    height: 39pt;
+    left: 50%;
+    border-radius: 30pt;
+    margin-left: -28.5%;
+    position: fixed;
+
+    & p {
+      text-decoration: none;
+      font-size: 120%;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+    }
+  }
+
+  & .bool-url {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  & .reservation {
+    top: 33pt;
+    width: 90%;
+    height: 126pt;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    & .reservation-number {
+      height: 30pt;
+      width: 70%;
+      text-align: center;
+      border-color: rgba(255, 83, 71, 0.19);
+    }
+    & .confirm {
+      width: 100pt;
+      height: 30pt;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      bottom: -10pt;
+      color: white;
+      border-radius: 28pt;
+      background: #ff5347;
+
+      & .confirm-text {
+        margin: 11px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="container">
+  <div class="top">
+    <div class="back" [routerLink]="['/trip']">
+      <img src="/assets/left-arrow.png">
+    </div>
+    <div class="title">
+      {{trip.destination}}
+    </div>
+  </div>
+  <div class="hero" [ngStyle]="{'background': 'url(' + tripService.pics[0] + ')'}">
+
+    <div class="router"  [routerLink]="['/map']">
+      <img src="/assets/location-big-white.png">
+    </div>
+
+  </div>
+  <div class="details">
+  
+
+
+    <div class="hotels" [routerLink]="['/hotels']">
+      <span>
+        <img src="/assets/bed.png">
+      </span>
+      <span>CHOOSE HOTELS</span>
+    </div>
+
+
+    <div class="flights" [routerLink]="['/flights']">
+        <span>
+          <img src="/assets/air-icon.png">
+        </span>
+        <span>CHOOSE FILGHTS</span>
+      </div>
+
+  </div>
+  <div class="content">
+    <div class="palces-continer">
+      <div class="days" *ngFor="let day of trip.places; let i=index">Trip {{trip.destination}} |  day {{i+1}}
+        <div class="place-details" *ngFor="let place of day" (click)="chooseAttracrion(place)">
+          <div>
+            <div class="picture">
+                <img src="{{place.picture}}">
+              </div>
+              <div class="name">{{place.name}}</div>
+            </div>
+              <div class="icons">
+                <div *ngFor="let icon of place.icons" class="icon">
+                    <img src="{{icon}}">
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</ion-content>

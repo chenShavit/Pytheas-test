@@ -1,0 +1,8 @@
+{
+  "name": "Pytheas",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

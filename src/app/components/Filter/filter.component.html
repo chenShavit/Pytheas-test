@@ -1,0 +1,59 @@
+<ion-content>
+    <div class="dialog">
+        <div class="close">
+
+        </div>
+        <div class="title">
+            Filters
+        </div>
+        <div class="subtitle destination">
+            <img src="/assets/location.png"> Destination
+            <div class="autocomplete">
+            <ion-searchbar id="search"
+            placeholder="Type a destination"
+		[(ngModel)]="searchText"
+		(ionInput)="_filterPlaces($event)"
+		(ionBlur)="removeFocus()"
+        debounce=500>
+	</ion-searchbar>
+    <ion-list>
+		<ion-item (click)="chooseCity(res.name)" *ngFor="let res of cities">
+			{{res.name}}
+        </ion-item>
+    </ion-list>
+    </div>
+        </div>
+        <div class="subtitle dates"><div class="title-img"><img src="/assets/calendar-icon.png">Dates</div> 
+            <ion-item>
+                <ion-datetime placeholder="Date Start"  [(ngModel)]="startDate" (ionChange)="getDateStart($event)"></ion-datetime>
+            </ion-item>
+            <ion-item>
+                <ion-datetime class="datetimeColor" placeholder="End Start"  [(ngModel)]="endDate" (ionChange)="getDateEnd($event)"></ion-datetime>
+            </ion-item>
+            <span *ngIf="showError" class="error">Please select at least 2 days</span>
+        </div>
+        <div class="subtitle price">
+            <img src="/assets/tag-icon.png"> Price Range
+            <ion-item class="slider">
+                <ion-range dualKnobs="true" min="300" max="2000" step="100" snaps="true" pin="true">
+                </ion-range>
+            </ion-item>
+        </div>
+        <div class="subtitle people">
+                <img src="/assets/user-icon.png"> People
+                <ion-select class="select-drop">
+                        <select matNativeControl required>
+                          <ion-select-option value="2">2</ion-select-option>
+                          <ion-select-option value="3">3</ion-select-option>
+                          <ion-select-option value="4">4</ion-select-option>
+                          <ion-select-option value="5">5</ion-select-option>
+                        </select>
+                      </ion-select>
+                      
+            </div>
+            <div [routerLink]="['/explore']" class="bth-next">
+                Explore
+            </div>
+
+    </div>
+</ion-content>

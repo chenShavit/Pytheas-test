@@ -1,0 +1,191 @@
+
+ .header {
+     width: 100%;
+     height: 26vh;
+     background: linear-gradient(to right, #FE784D, #FF5347);
+     padding-top: 20px;
+     color: white;
+     .side-bar {
+         margin-top: 16px;
+         margin-left: 14px;
+         background: url("/assets/menu.png");
+         width: 29px;
+         float: left;
+         height: 28px;
+         background-repeat: no-repeat;
+     }
+     .title {
+        text-align: center;
+        padding-right: 30px;
+        margin: 0 auto;
+        font-size: 21px;
+        font-weight: bold;
+        margin-top: 16px;
+     }
+     .edit-profile {
+         width: 80%;
+         height: 123px;
+         box-shadow: 0px 1px 2px #00000059;
+         background-color: white;
+         margin: 0 auto;
+         border-radius: 5px;
+         margin-top: 21%;
+     }
+     .saved {
+         color: #4F4E4F;
+         font-weight: bold;
+         font-size: 10px;
+         margin-left: 40px;
+         padding-top: 13px;
+         display: inline-block;
+         .number-saved {
+             font-size: 31px;
+             text-align: center;
+         }
+     }
+     .trips {
+         color: #4F4E4F;
+         font-weight: bold;
+         font-size: 10px;
+         float: right;
+         margin-right: 40px;
+         padding-top: 13px;
+         .number-trips {
+             font-size: 31px;
+             text-align: center;
+         }
+     }
+     .profile-details {
+         width: 113px;
+         height: 113px;
+         border-radius: 100%;
+         background-color: white;
+         box-shadow: 0px 1px 2px #00000059;
+         margin-top: -115px;
+         padding-top: 20px;
+         margin-left: 12%;
+         display: inline-block;
+         filter: drop-shadow(2px 2px 2px #00000059);
+         .icon {
+             background: url("/assets/user.png");
+             width: 58%;
+             height: 70px;
+             margin: 0 auto;
+             background-repeat: no-repeat;
+         }
+     }
+     .bth-profile {
+         background: linear-gradient(to right, #FE784D, #FF5347);
+         color: white;
+         filter: drop-shadow(2px 2px 2px #00000059);
+         text-align: center;
+         border-radius: 17px;
+         width: 154px;
+         height: 34px;
+         font-size: 14px;
+         margin-left: 27%;
+         margin-top: 15px;
+     }
+ }
+
+ .container-trips {
+     background-color: #F7F7F7;
+     height: 62vh;
+     margin-top: 115px;
+     padding-left: 11%;
+     .current-trips,.planned-trips {
+         color: rgba(79, 78, 79, 0.5);
+         font-size: 13px;
+         font-weight: bold;
+     }
+     .planned-trips{
+         margin-top: 20px;
+     }
+     .trip {
+         margin-top: 7px;
+         width: 90%;
+         height: 74px;
+         padding-top: 19px;
+         padding-left: 18px;
+         background: white;
+         border-radius: 2px;
+         box-shadow: 0px 2px 6px #00000059;
+         .picture {
+             display: inline-block;
+             img {
+                 width: 35px;
+                 height: 35px;
+                 border-radius: 100%
+             }
+         }
+         .name {
+             color: black;
+             font-size: 14px;
+             font-weight: bold;
+             display: inline-block;
+             align-content: top;
+             vertical-align: top;
+             padding-left: 17px
+         }
+         .details {
+             color:#4F4E4F;
+             margin-left: -54px;
+             font-weight: bold;
+             display: inline-block;
+         span:first-child{
+            color:#FF5347;
+            font-size: 11px;
+            margin-right: 5px;
+         }
+         span:last-child{
+             margin-left: 10px;
+             img{
+                 margin-right: 5px;
+                 vertical-align: bottom;
+             }
+         }
+        }
+     }
+     .line{
+         width: 1px;
+         height: 44px;
+         float: right;
+         background-color: #707070;
+     }
+     .day{
+         margin-right: 12px;
+        float: right;
+        margin-left: 10px;
+        span:first-child{
+            color: #FF5347;
+            font-size: 19px;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+         }
+         span:last-child{
+           color:#4F4E4F;
+           font-size: 17px;
+           text-align: center;
+           font-weight: bold;
+        }
+     }
+ }
+
+ .container {
+     background-color: #F7F7F7;
+ }
+ ion-fab-button{
+    --background: #FE774D;
+    --background-activated: #C6C6C6;
+    --padding-bottom:20px;
+    filter: drop-shadow(2px 2px 2px #00000059);
+  }
+  ion-icon{
+      color: white;
+  }
+.fab-button-close-active{
+    --background: #C6C6C6;
+font-size:28px;
+filter: drop-shadow(2px 2px 2px #00000059);
+}

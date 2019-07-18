@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Pytheas",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

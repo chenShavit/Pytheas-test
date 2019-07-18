@@ -1,0 +1,42 @@
+<ion-content>
+    <div class="container">
+        <div class="top">
+            <div class="back" [routerLink]="['/trip']">
+                <img src="/assets/left-arrow.png">
+            </div>
+            <div class="title">
+                EXPLORE
+            </div>
+            <div class="bth-filter" [routerLink]="['/filter']">
+                Filter
+            </div>
+        </div>
+        <div class="trips">
+                <!-- <div id="loader">
+
+                    </div> -->
+            <div class="trip-card" *ngFor="let trip of tripService.expolreTrips" (click)="chooseTrip(trip)">
+                <ion-slides pager="true" [options]="slideOpts">
+                    <ion-slide class="slides" *ngFor="let pic of trip.pictures">
+                        <img src="{{pic}}">
+                    </ion-slide> 
+                </ion-slides>
+                <div class="title-card">
+                    {{trip.destination}}
+                </div>
+                <div class="details">
+                    <span> {{trip.days}}</span>
+                    <span>DAYS</span>
+                    <span>
+                        <img src="/assets/location.png">20</span>
+                    <span>
+                        <img src="/assets/dollar.png">2000</span>
+                </div>
+
+            </div>
+            <ion-fab-button *ngIf="tripService.expolreTrips.length >0" class="book-trip-bth">Book trip</ion-fab-button>
+        </div>
+
+
+    </div>
+</ion-content>

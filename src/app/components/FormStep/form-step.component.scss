@@ -1,0 +1,142 @@
+* {
+    font-family: Roboto-Regular;
+}
+.note{
+    display: block;
+    margin-top: 5%;
+}
+.step {
+    .number {
+        color: white;
+        background-color: #4F4E4E;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        float: left;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+}
+
+.explore-bth,
+.next-bth {
+    width: 123px;
+    height: 34px;
+    border: 2px solid #FF5347;
+    text-align: center;
+    color: #FF5347;
+    border-radius: 27px;
+    font-size: 16px;
+    background-color: white;
+    margin: 70px;
+    padding-top: 3px;
+}
+
+.explore-bth:hover,
+.next-bth:hover {
+    width: 123px;
+    height: 34px;
+    background: linear-gradient(to right, #FE784D, #FF5347);
+    color: white;
+}
+
+.explore-bth {
+    float: initial;
+    margin: 0 auto;
+    height: 34px;
+    border: 2px solid #FF5347;
+    text-align: center;
+    color: #FF5347;
+    border-radius: 27px;
+    font-size: 16px;
+    background-color: white;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+}
+
+.form-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #4F4E4E;
+    ;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+}
+
+.form-radio:checked::before {
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 6px;
+    top: 2px;
+    content: '\02143';
+    transform: rotate(40deg);
+}
+
+.form-radio:hover {
+    background-color: #f7f7f7;
+}
+
+.form-radio:checked {
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 800px) {
+    .form-conrainer {
+        width: 87%;
+        margin: 0 auto;
+        margin-top: 15%;
+    }
+    .container {
+        background-image: white;
+        width: 100%;
+        height: 100vh;
+        padding-top: 60px;
+        h1 {
+            font-size: 33px;
+            text-align: left;
+            margin: 0 auto;
+            padding-top: 5px;
+        }
+        .container-chips {
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .form-conrainer {
+        width: 30%;
+        width: 30%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    .container {
+        background-image: white;
+        width: 100%;
+        height: 100vh;
+        padding-top: 60px;
+        h1 {
+            color: white;
+            font-size: 19px;
+            width: 80%;
+            text-align: center;
+            padding-top: 9px;
+        }
+    }
+    .container-chips {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}

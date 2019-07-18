@@ -1,0 +1,44 @@
+<ion-content>
+    <div class="container">
+        <div class="top">
+            <div class="back" [routerLink]="['/details']">
+                <img src="/assets/left-arrow.png">
+            </div>
+            <div class="title">
+                Flights Reservation
+            </div>
+        </div>
+    <div class="flights">
+            <div id="loader">
+
+                </div>
+         <div class="flight-card" *ngFor="let flight of tripService.flights">
+             <div class="forth">
+                <div class="icon"><img src="/assets/air-icon.png"></div>
+                <div class="book-bth" (click)="route(flight)">
+                        BOOK
+                    </div>
+                <div class="details">
+                    <span class="date">{{details.dateFrom}}</span>
+                    <span class="date">{{details.from}} to {{details.to}} </span>
+                    <span class="hour-departure">Departure: <span>{{flight.depTime}}</span></span>
+                    <span class="arrival-hour">Arrivale: <span>{{flight.arrivalTime}}</span></span>
+                    <span>Flight time: <span>{{flight.flightsflDuration}}</span></span>
+                    <span class="air-line">{{flight.airline}}</span>
+                    <span class="price">{{flight.price}} $</span>
+                </div>
+               
+           </div>  
+             <!--  <div class="back">
+                <div class="icon"></div>
+                <div class="details">
+                    <span class="date"></span>
+                    <span class="hour-departure"></span>
+                    <span class="arrival-hour"></span>
+                    <span class="price"></span>
+                </div> 
+            </div>  -->
+        </div>
+    </div> 
+</div>
+</ion-content>

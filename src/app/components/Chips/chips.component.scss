@@ -1,0 +1,19 @@
+.mat-chip {
+    background-color: white;
+    color: #FF5347;
+    border: 2px solid #FF5347;
+    height: 34px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-right: 7px;
+    border-radius: 17px;
+    display: inline-block;
+}
+.clicked{
+        background:linear-gradient(to right, #FE784D, #FF5347);
+        color: white !important;
+        height: 34px;
+}

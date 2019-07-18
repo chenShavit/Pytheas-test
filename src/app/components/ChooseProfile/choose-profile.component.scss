@@ -1,0 +1,46 @@
+.container{
+    background: linear-gradient(to right, #FE784D, #FF5347);
+    height: 100vh;
+    .title{
+        text-align: center;
+        padding-top: 80px;
+        font-weight: bold;
+        width: 300px;
+        margin: 0 auto;
+        color:white;
+        font-size: 27px;
+    }
+    .tag{
+        height: 17vh;
+        width: 30vw;
+        background-color: white;
+        border-radius: 100%;
+        float: left;
+        margin-bottom: 60px;
+        margin-right: 45px;
+        img{
+            margin-top: 20px;
+            margin-left: 22px;
+        }
+
+    }
+    .tags > div:last-child{
+        background-color: rgba(255, 255, 255, 0.3);
+        img{
+            margin-left: 23px;
+            margin-top: 24px;
+        }
+    }
+    .name{
+        color: white;
+        font-size: 20px;
+        margin-top: 32px;
+        text-align: center;
+    
+    }
+    .tags{
+        padding-left: 14%;
+        margin: 0 auto;
+        margin-top: 41px;
+    }
+}

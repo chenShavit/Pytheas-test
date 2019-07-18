@@ -1,0 +1,116 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 900;
+    src:  url('~src/fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: Roboto-Black;
+    font-style: normal;
+    font-weight: 900;
+    src:  url('~src/fonts/Roboto-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: 900;
+    src:  url('~src/fonts/Roboto-Medium.ttf') format('truetype');
+}
+body{
+    margin: 0px;
+}
+// .md-chips .md-chip-input-container{
+//     width: 100% !important;
+// }
+// .form-radio {
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;
+//     display: inline-block;
+//     position: relative;
+//     background-color: #f1f1f1;
+//     color: #4F4E4E;
+//     left: 7px !important;
+//     top: 3px!important;
+//     height: 20px;
+//     width: 20px;
+//     border: 0;
+//     border-radius: 50px;
+//     cursor: pointer;
+//     margin-right: 15px !important;
+//     outline: none;
+//     }
+// .mat-vertical-stepper-content.ng-trigger.ng-trigger-stepTransition{
+//     width: 84%;
+// }
+// .mat-radio-button{
+//     margin-bottom: 15px;
+//     color:#4F4E4E;
+// }
+// .mat-step-label {
+//     display: inline-block;
+//     white-space: inherit !important;
+//     overflow: inherit !important;
+//     text-align: left;
+//     /* width: 70%; */
+//     text-overflow: ellipsis;
+//     min-width: 50px;
+//     vertical-align: middle;
+// }
+// .mat-radio-label-content {
+//     -webkit-user-select: auto;
+//     -moz-user-select: auto;
+//     -ms-user-select: auto;
+//     user-select: auto;
+//     display: inline-block;
+//     order: 0;
+//     line-height: inherit;
+//     padding-left: 8px;
+//     padding-right: 8px !important;
+//     font-size: 14px !important;
+// }
+// .mat-vertical-content {
+//     padding: 0 24px 1px 24px;
+// }
+// .mat-stepper-horizontal, .mat-stepper-vertical{
+//     background-color: transparent;
+// }
+// .mat-step-header .mat-step-label.mat-step-label-active{
+//     color:#4F4E4E;
+// }
+// .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+//     border-color: #4F4E4E !important;  
+// }
+// .mat-input-element {
+//     caret-color: #4F4E4E !important
+// }
+// .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+//     background-color: #4F4E4E !important; 
+// }
+
+// .mat-step-icon-state-number.mat-step-icon.mat-step-icon-selected{
+//     background-color: #4F4E4E !important;
+//     color: #fff;
+// }
+// .mat-step-header .mat-step-icon-selected{
+//     background-color: #4F4E4E !important;
+// }
+.datetime-text{
+    color: #ff5347;
+    font-size: 11px;
+    border-color: #ff5347;
+}

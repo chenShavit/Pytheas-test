@@ -1,0 +1,37 @@
+<ion-content>
+    <div class="container">
+        <div class="top">
+            <div class="back" [routerLink]="['/details']">
+                <img src="/assets/left-arrow.png">
+            </div>
+            <div class="title">
+                Trip map
+            </div>
+            </div>
+                <agm-map [latitude]="lat" [longitude]="lng" [scrollwheel]="false" [zoom]="zoom" (mapClick)="addMarker($event.coords.lat, $event.coords.lng)">
+                    <agm-direction [origin]="origin" [destination]="destination">
+                    </agm-direction>
+                    <agm-marker *ngFor="let marker of markers" [latitude]="marker.lat" [longitude]="marker.lng" [opacity]="marker.alpha" [markerDraggable]="true"
+                        (markerClick)="selectMarker($event)">
+                    </agm-marker>
+                </agm-map>
+                <div class="details">
+                    <img src="/assets/circle.png">
+                    <div class="current-location">
+                        <span>Current Location</span>
+                        <span>{{currentPlace}}</span>
+                        <span class="kilometers">{{kilometers}} km </span>
+                    </div>
+                    <div class="routes" *ngIf="nextPlace">
+                            <img src="/assets/empty.png">
+                        <div class="route">
+                            {{nextPlace}}
+                        </div>
+                </div>
+                <div class="bth-my-location" (click)="getPathA()">Next Location</div>
+
+                <!-- <div class="bth-my-location" (click)="myLocation()">My Loction</div> -->
+        
+            </div>
+        </div>
+</ion-content>

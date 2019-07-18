@@ -1,0 +1,22 @@
+<ion-content>
+    <div class="container">
+        <div class="top">
+            <div class="back" [routerLink]="['/details']">
+                <img src="/assets/left-arrow.png">
+            </div>
+            <div class="title">
+                {{tripService.attraction.name}}
+            </div>
+        </div>
+        <div class="hero" [ngStyle]="{'background': 'url(' + tripService.trip.pictures[0] + ')'}">
+
+            <div class="router">
+        <img src="/assets/location-big-white.png">
+      </div>
+
+        </div>
+        <div class="description"><div class="title">Description:</div>
+            {{tripService.attraction.description}}
+        </div>
+    </div>
+</ion-content>

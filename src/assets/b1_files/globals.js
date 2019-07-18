@@ -1,0 +1,1 @@
+globExprWeb["google-photos-cloudfront"] = "https://d2wyywrksafq6g.cloudfront.net";

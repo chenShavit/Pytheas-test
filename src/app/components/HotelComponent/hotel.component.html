@@ -1,0 +1,42 @@
+<ion-content>
+    <div class="top">
+        <div  class="back"  [routerLink]="['/details']">
+            <img src="/assets/left-arrow.png">
+        </div>
+        <div class="title">
+            Hotels
+        </div>
+    </div>
+    <div class="hotels">
+            <div id="loader">
+
+                </div>
+                <div class="hotels-container" *ngFor="let hotel of tripService.hotels">
+                        <div class="hotel-picture" [ngStyle]="{'background': 'url(' + this.baseUrl+hotel.picture + ')'}"></div>
+                        <div class="hotel-name">
+                            <p class="name">{{hotel.name}}</p>
+                            <p class="hotel-address">{{hotel.address}}</p>
+                        </div>
+                        <div class="hotel-info">
+                            <div class="price-container">
+                                <p class="price-title">Price</p>
+                                <p class="price">{{hotel.price}}$</p>
+                            </div>
+                            <div class="rate-container">
+                                <p class="rate">Rate</p>
+                                <div class="stars">
+                                    {{hotel.stars}} Stars
+                                </div>
+                            </div>
+                            <div class="details-container">
+                                <p class="detail-title">
+                            </div>
+                        </div>
+                        <div class="book-bth" (click)="route(hotel.deep_link)">
+                                BOOK
+                            </div>
+                    </div>
+    </div>
+ 
+    
+    </ion-content>

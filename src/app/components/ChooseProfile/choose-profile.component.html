@@ -1,0 +1,11 @@
+<ion-content>
+    <div class="container">
+        <div class="title">Choose your traveler profile</div>
+        <div class="tags">
+            <div [routerLink]="['/form']" class="tag" *ngFor="let tag of tags">
+                <img src="{{tag.icon}}">
+                <div class="name">{{tag.name}}</div>
+            </div>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,88 @@
+
+.back {
+    display: inline-block;
+    margin-top: 29px;
+    margin-left: 30px;
+}
+#loader {
+    pointer-events: none;
+    width: 100%;
+    position: absolute;
+    padding-top: 18px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 13%;
+    display: inline-block;
+    margin-bottom: 7%;
+}
+
+.top {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, #FE784D, #FF5347);
+    color: white;
+}
+.container {
+    background-color: #F7F7F7;
+    padding-bottom: 20px;
+    height: 100vh;
+}
+.flights
+{
+    margin-top: 25px;
+    .flight-card{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: white;
+        width: 95%;
+        margin: 0 auto;
+        box-shadow: 0px 1px 2px #00000059;
+        margin-bottom: 10px;
+    }
+    .details {
+        width: 90%;
+        margin-left: 32px;
+    > span {
+        margin-right: 10px;
+        font-size: 11px;
+        width: 40%;
+        display: inline-block;
+        span:last-child{
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+   .air-line,.price{
+       font-weight: bold;
+   }
+   .price{
+    font-size: 15px;
+    margin-top: 7px;
+   }
+  
+ 
+    }
+    .book-bth{
+        height: 28px;
+        border-radius: 7%;
+        background: linear-gradient(to right, #FE784D, #FF5347);
+        color: white;
+        text-align: center;
+        width: 22%;
+        margin-top: 15%;
+        float: right;
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 6px;
+        box-shadow: 0px 1px 4px #00000059;
+       }
+    .icon{
+        float: left;
+    margin-right: 15px;
+    margin-top: 15%;
+    margin-right: 5%;
+    }
+    
+}

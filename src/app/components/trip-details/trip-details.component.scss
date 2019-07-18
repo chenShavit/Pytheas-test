@@ -1,0 +1,124 @@
+.top {
+    padding-top:20px;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, #FE784D, #FF5347);
+    color: white;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 29px;
+    margin-left: 30px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30%;
+    display: inline-block;
+    margin-bottom: 7%;
+}
+
+.hero {
+    width: 100%;
+    height: 25vh;
+    background-size: cover !important;
+    padding-top: 15px;
+    padding-left: 15px;
+    .router {
+        border-radius: 100%;
+        background: linear-gradient(to right, #FE784D, #FF5347);
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        text-align: center;
+        padding-top: 12px;
+        box-shadow: 0px 1px 4px #00000059;
+    }
+}
+.details {
+    width: 90%;
+    height: 72px;
+    box-shadow: 0px 3px 6px #00000059;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 7px;
+    margin-top: -35px;
+    >div {
+        width: 50%;
+        display: inline-block;
+        box-shadow: 0px 1px 2px #00000059;
+        height: 11vh;
+        border-radius: 8px;
+        padding: 2px;
+        span:first-child {
+            font-size: 18px;
+            padding-top: 16px;
+            font-weight: bold;
+            color: #ff5347;
+            display: block;
+            text-align: center;
+        }
+        span:last-child {
+            color: #4F4E4F;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+        }
+    }
+}
+.container {
+    background-color: #F7F7F7;
+    padding-bottom: 20px;
+}
+
+.palces-continer {
+    margin-top: 30px;
+    padding-left: 33px;
+    .days {
+        color: #4F4E4F;
+        font-size: 12px;
+        margin-bottom: 40px;
+    }
+}
+
+.place-details {
+    margin-top: 7px;
+    width: 90%;
+    height: 74px;
+    padding-top: 19px;
+    padding-left: 18px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0px 3px 6px #00000059;
+    filter: drop-shadow(2px 2px 2px #00000059);
+    .picture {
+        display: inline-block;
+        img {
+            width: 35px;
+            height: 35px;
+            border-radius: 100%
+        }
+    }
+    .name {
+        color: black;
+        font-size: 12px;
+        /* font-weight: bold; */
+        display: inline-block;
+        align-content: top;
+        width: 70%;
+        vertical-align: top;
+        padding-left: 18px;
+    }
+    .icon{
+        display: inline-block;
+        width: 12px;
+        margin-right: 8px;
+    }
+    .icons{
+        margin-left: 49px;
+    margin-top: -10px;
+    }
+}

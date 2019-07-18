@@ -1,0 +1,8 @@
+<div class="mat-chip-list">
+    <div class="row1">
+        <div class="mat-chip" *ngFor="let pre of tripService.tags" (click)="isSelected(pre)" [ngClass]='pre.isClicked ? "clicked" : ""'>
+            {{pre.name}}
+        </div>
+
+    </div>
+</div>
